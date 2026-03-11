@@ -1,0 +1,1961 @@
+@charset "utf-8";
+
+
+body {
+  font-family: 'メイリオ', Meiryo, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+  background-image: url(../images/background_img2.png), url(../images/background_img3.png);
+  background-position: left, right;
+  background-repeat: repeat-y, repeat-y;
+  background-size: auto;
+  color: #40220F;
+}
+
+header {
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/header_back.png);
+  background-repeat: repeat-x;
+  background-position: center center;
+  position: fixed;
+  z-index: 1;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff8bb;
+  margin-bottom: 30px;
+  margin-top: 47px;
+}
+
+header ul li {
+  margin-right: 30px;
+  position: relative;
+}
+
+header ul li:last-child {
+  margin-right: 0px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff8bb;
+}
+
+header nav ul li a:hover,
+#home header nav ul li:nth-child(1) a,
+#plan header nav ul li:nth-child(2) a,
+#howto header nav ul li:nth-child(3) a,
+#guest header nav ul li:nth-child(4) a,
+#time header nav ul li:nth-child(5) a,
+#rule header nav ul li:nth-child(6) a,
+#access header nav ul li:nth-child(7) a {
+  color: #F39800;
+  border-bottom: 2px solid #F39800;
+}
+
+.top {
+  width: 100%;
+  position: relative;
+  /* top: 91px; */
+  padding: 91px 0 0 0;
+}
+
+.top img {
+  width: 100%;
+}
+
+.top .pcres {
+  display: none;
+}
+
+.top .sp {
+  display: none;
+}
+
+.top h1 {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.copy {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  /* margin-top: 100px; */
+  width: 100%;
+  /* padding: 0 18.75%; */
+}
+
+main section {
+  text-align: center;
+}
+
+main .idx-topics {
+  margin-bottom: 100px;
+}
+
+main .idx-topics h2 {
+  font-size: 34px;
+  color: #3588FD;
+  margin-bottom: 15px;
+}
+
+main .idx-topics h2::before {
+  content: url(../images/top_title_logo2.png);
+  padding-right: 10px;
+}
+
+main .idx-topics h2::after {
+  content: url(../images/top_title_logo.png);
+  padding-left: 10px;
+}
+
+main .idx-topics .topics-box {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 948px;
+  padding: 21px 100px 17px 100px;
+  background-color: #e0e9ff;
+  border-radius: 90px;
+  gap: 19px;
+}
+
+main .idx-topics .topics-box time {
+  font-size: 16px;
+  font-weight: bold;
+  color: #09036F;
+}
+
+main .idx-topics .topics-box p {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+main .kyoutu {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border: 10px solid #0688c4;
+  border-radius: 90px;
+  box-shadow: 0 4px 64px 0 #ddd;
+  margin-bottom: 150px;
+  padding: 150px 60px 60px 60px;
+}
+
+main .kyoutu h3 {
+  position: absolute;
+  top: -37px;
+  left: 25%;
+}
+
+main .idx-about h4 {
+  margin-bottom: 25px;
+}
+
+main .idx-about p {
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 60px;
+}
+
+main .idx-about .speace .subbox2 {
+  text-align: left;
+  font-size: 16px;
+}
+
+main .idx-about .speace .subbox2 .isan {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .idx-about .time,
+.idx-about .speace {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .idx-about .time {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+main .idx-about .speace {
+  margin-bottom: 80px;
+}
+
+main .idx-about .youtube {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+main .idx-about .youtube iframe {
+  margin-bottom: 80px;
+  width: 100%;
+  height: 100%;
+}
+
+main .idx-about .idx-howto {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+main .idx-about .idx-howto .howto-box {
+  background-color: #fffede;
+  width: 348px;
+  padding: 24px;
+  font-size: 14px;
+}
+
+main .idx-about .idx-howto .howto-box .howto a {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  /* width: 300px; */
+  line-height: 64px;
+  background-color: #b31b1b;
+  border: 2px solid #ff0000;
+  border-radius: 90px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+main .idx-about .idx-howto .howto-box .howto i {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+main .idx-about .idx-howto .howto-box ul {
+  width: fit-content;
+  margin: auto;
+  line-height: 28px;
+  text-align: left;
+  list-style-type: none;
+}
+
+main .idx-about .idx-howto .howto-box ul li::before {
+  content: "・";
+}
+
+main .idx-live iframe {
+  margin-right: 100px;
+}
+
+main .idx-live iframe:last-child {
+  margin-right: 0px;
+}
+
+main .idx-x {
+  font-size: 24px;
+}
+
+main .idx-x p {
+  margin-bottom: 20px;
+}
+
+main .idx-x .twitter-timeline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .idx-enter p {
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+main .idx-enter img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+main .idx-enter a {
+  display: block;
+  margin: 0 0 0 auto;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+main .idx-enter .enter-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  background-color: #b31b1b;
+  border: 3px solid #ff0000;
+  border-radius: 90px;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 250px;
+}
+
+main .idx-enter .enter-box i {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+main .idx-memory {
+  margin-bottom: 150px;
+}
+
+main .idx-memory h3 {
+  margin-bottom: 30px;
+}
+
+main .idx-memory h3 img {
+  width: 100%;
+}
+
+main .idx-memory .slider {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}
+
+main .idx-memory .slider li:nth-child(odd) {
+  margin-top: 30px;
+}
+
+main .idx-memory .slider li:nth-child(even) {
+  margin-bottom: 30px;
+}
+
+main .idx-memory .slider img {
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+main .idx-memory .slider .slick-slide {
+  margin: 0 30px;
+  /*スライド左右の余白調整*/
+}
+
+#page-top a {
+  display: block;
+  text-align: center;
+}
+
+#page-top a .updown {
+  animation-name: updown1;
+  /* アニメーション名の指定 */
+  animation-delay: 0s;
+  /* アニメーションの開始時間指定 */
+  animation-duration: 3s;
+  /* アニメーション動作時間の指定 */
+  animation-timing-function: linear;
+  /* アニメーションの動き指定（徐々に早く）*/
+  animation-iteration-count: infinite;
+  margin-left: 10px;
+}
+
+@keyframes updown1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+footer img {
+  width: 100%;
+}
+
+footer .fo-box {
+  width: 100%;
+  background-color: #0688c4;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #FFCB64;
+}
+
+footer .fo-box a {
+  background-color: #FFF8BB;
+  border: 3px solid #FFCB64;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 260px;
+  line-height: 58px;
+  border-radius: 90px;
+  text-decoration: none;
+  color: #40220F;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+footer .fo-box a i {
+  margin-left: 10px;
+}
+
+/* ---------- ホーム ----------- */
+#body main h4 img {
+  width: 100%;
+}
+
+/* ---------- 共通 ---------- */
+main .kyoutu2 {
+  position: relative;
+  /* width: 1220px; */
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border: 10px solid #0688c4;
+  border-radius: 90px;
+  box-shadow: 0 4px 64px 0 #ddd;
+  margin-bottom: 150px;
+  padding: 150px 60px 60px 60px;
+}
+
+main .kyoutu2 h3 {
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  color: #fff;
+  background-color: #0688c4;
+  width: 80%;
+  padding: 1% 7%;
+  border-radius: 10px;
+}
+
+main .time {
+  margin-bottom: 20px;
+}
+
+main .time,
+.speace {
+  display: flex;
+  align-items: flex-start;
+  width: 700px;
+  gap: 20px;
+  font-size: 22px;
+  line-height: 37px;
+  font-weight: bold;
+}
+
+main .time .subbox,
+.speace .subbox {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #F39800;
+  line-height: 37px;
+  width: 118px;
+  border-radius: 100px;
+}
+
+
+/* ---------- 企画 ---------- */
+.top2 {
+  max-width: 1350px;
+  margin-top: 159px;
+  margin-bottom: 50px;
+}
+
+main .pln-map {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .pln-map ul {
+  font-size: 14px;
+  line-height: 22px;
+  width: fit-content;
+  margin: auto;
+  text-align: left;
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+
+main .pln-map img {
+  margin-bottom: 40px;
+}
+
+main .pln-map .map-box {
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+main .pln-map .map-box a {
+  color: #fff;
+  background-color: #b31b1b;
+  border: 3px solid #ff0000;
+  padding: 30px 0;
+  width: 350px;
+  border-radius: 90px;
+  text-decoration: none;
+}
+
+main .pln-map .map-box a i {
+  margin-left: 10px;
+}
+
+main .pln-amawari .amawari-box,
+.pln-katuren .katuren-box {
+  background-color: #FFFEF5;
+  padding: 60px;
+  margin-bottom: 40px;
+}
+
+main .pln-amawari .amawari-box h4,
+.pln-katuren .katuren-box h4 {
+  color: #09036F;
+  font-size: 34px;
+  margin-bottom: 70px;
+}
+
+.amawari-subbbox,
+.katuren-subbbox {
+  width: 960px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+
+.amawari-subbbox p,
+.katuren-subbbox p {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  width: 490px;
+  margin-left: 50px;
+}
+
+
+
+/* ---------- 楽しみかた ---------- */
+main .howto-box p {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 45px;
+  margin-bottom: 90px;
+}
+
+main .howto-box .hwt-subbox1,
+.hwt-subbox2 {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+}
+
+main .howto-box .hwt-subbox1 a,
+.hwt-subbox2 a {
+  color: #fff;
+  background-color: #b31b1b;
+  border: 3px solid #ff0000;
+  padding: 30px 0;
+  width: 300px;
+  border-radius: 90px;
+  text-decoration: none;
+}
+
+main .howto-box .hwt-subbox1 {
+  margin-bottom: 50px;
+}
+
+main .howto-box .hwt-subbox2 {
+  margin-bottom: 85px;
+}
+
+main .howto-box .hwt-subbox1 i,
+.hwt-subbox2 i {
+  margin-left: 10px;
+}
+
+main .cospley-box,
+.camera-box,
+.custmer-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  /* width: 960px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .cospley-subbbox,
+.camera-subbbox,
+.custmer-subbbox {
+  text-align: left;
+  margin-left: 50px;
+}
+
+main .cospley-subbbox p,
+.camera-subbbox p,
+.custmer-subbbox p {
+  width: 490px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+main .cospley-box:last-child,
+.camera-box:last-child,
+.custmer-box:last-child {
+  margin-bottom: 0px;
+}
+
+main .cospley-box .cospley-subbbox h4,
+.camera-box .camera-subbbox h4,
+.custmer-box .custmer-subbbox h4 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+
+/* ---------- ゲストコスプレイヤー ---------- */
+main .subcatch {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 45px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+main figure {
+  margin-bottom: 20px;
+}
+
+main figcaption {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+main button {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+main button i {
+  font-size: 34px;
+  line-height: 51px;
+  color: #fff;
+}
+
+main .guest-box {
+  display: flex;
+  justify-content: space-around;
+  /* width: 780px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+main section:nth-child(4) .guest-box:last-child {
+  margin-bottom: 0px;
+}
+
+/* ---------- タイムスケジュール ---------- */
+#time .top {
+  margin-bottom: 200px;
+}
+
+.buttons {
+  /* width: 1110px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+/* ➁ボタン単体 */
+.button1 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  border-radius: 10px;
+  border: 3px solid #B09975;
+  width: 450px;
+  /* 横幅 210px */
+  height: 80px;
+  /* 縦幅 30px */
+}
+
+/* Aボタン */
+#a_btn {
+  font-family: 'メイリオ', Meiryo, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+  color: #40220F;
+  /* 文字色：白 */
+  background-color: #FFFEF2;
+  /* 背景色：赤 */
+  position: relative;
+  margin-right: 30px;
+}
+
+/* Aボタン active */
+#a_btn.active {
+  color: white;
+  /* 文字色：黒 */
+  background-color: #0575A9;
+  /* 文字色：白 */
+}
+
+#a_btn.active::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d7";
+  font-size: 40px;
+  position: absolute;
+  color: #0575A9;
+  top: -40px;
+  left: 45%;
+}
+
+/* Bボタン */
+#b_btn {
+  font-family: 'メイリオ', Meiryo, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+  color: #40220F;
+  /* 文字色：白 */
+  background-color: #FFFEF2;
+  /* 背景色：赤 */
+}
+
+/* Bボタン active */
+#b_btn.active {
+  color: #fff;
+  /* 文字色：黒 */
+  background-color: #0575A9;
+  /* 文字色：白 */
+  position: relative;
+}
+
+#b_btn.active::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d7";
+  font-size: 40px;
+  position: absolute;
+  color: #0575A9;
+  top: -40px;
+  left: 45%;
+}
+
+/* ➂切り替え画面 */
+.screen {
+  width: 1110px;
+  /* 横幅 100% */
+  height: 1994px;
+  /* 縦幅 500px */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /* 親要素 */
+  margin-bottom: 150px;
+}
+
+/* ➃A画面 */
+.a_screen {
+  position: absolute;
+  /* 子要素 */
+  opacity: 1;
+  /* 要素の透明度 */
+  pointer-events: auto;
+  /* マウスイベントをオン */
+  /* width: 100%; */
+  /* 横幅 100% */
+  height: 100%;
+  /* 縦幅 100% */
+}
+
+/* ➃A画面 active */
+.a_screen.active {
+  opacity: 0;
+  /* 要素の透明度 */
+  pointer-events: none;
+  /* マウスイベントをキャンセル */
+}
+
+/* ➄B画面 */
+.b_screen {
+  opacity: 0;
+  /* 要素の透明度 */
+  pointer-events: none;
+  /* マウスイベントをキャンセル */
+}
+
+/* ➄B画面 active */
+.b_screen.active {
+  position: absolute;
+  /* 子要素 */
+  opacity: 1;
+  /* 要素の透明度 */
+  pointer-events: auto;
+  /* マウスイベントをオン */
+  /* width: 100%; */
+  /* 横幅 100% */
+  height: 100%;
+  /* 縦幅 100% */
+}
+
+.schedule ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.schedule ul li {
+  border-radius: 20px 20px 0 0;
+}
+
+.schedule ul li p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schedule ul .sch-place {
+  width: 260px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.schedule ul .sch-contents {
+  width: 260px;
+  line-height: 84px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.schedule ul li:nth-child(1) {
+  background-color: #5EBE79;
+}
+
+.schedule ul li:nth-child(2) {
+  background-color: #666BE0;
+}
+
+.schedule ul li:nth-child(3) {
+  background-color: #EEB22D;
+}
+
+.schedule ul li:nth-child(4) {
+  background-color: #E654CF;
+}
+
+.timetable {
+  background-color: #FFFEDE;
+}
+
+.timetable ul {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+}
+
+.timetable ul li:nth-child(1) {
+  background-color: rgba(111, 99, 85, 0.8);
+  width: 70px;
+  line-height: 230px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
+
+.timetable ul .time-body li:nth-child(1) {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.timetable ul .time-body ul li {
+  width: 260px;
+  height: 230px;
+  padding: 4px 8px;
+}
+
+.timetable .time-body .amawari-01 .amawari-box1 {
+  background-color: #fff;
+  border: 1px solid #5EBE79;
+}
+
+.timetable .time-body .ama2 .amawari-box1 {
+  width: 130px;
+  margin-left: auto
+}
+
+.timetable .time-body .ama2 .amawari-box1 .time-sub:last-child {
+  height: 115px;
+}
+
+.timetable .time-body .amawari-03 .amawari-box1 .time-sub:last-child {
+  height: 115px;
+}
+
+.timetable .time-body .amawari-02 .amawari-box1 {
+  background-color: #fff;
+  border: 1px solid #666BE0;
+}
+
+.timetable .time-body .amawari-03 .amawari-box1 {
+  background-color: #fff;
+  border: 1px solid #EEB22D;
+}
+
+.timetable .time-body .katsuren-01 .amawari-box1 {
+  background-color: #fff;
+  border: 1px solid #E654CF;
+}
+
+.time-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 230px;
+}
+
+.timetable .time-body .amawari-box1 .time-sub .ama1-box span {
+  color: #40220F;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+
+.timetable .time-body .amawari-01 .amawari-box1 .time-sub .ama1-box .ama1-sub {
+  font-weight: bold;
+  color: #5EBE79;
+}
+
+.timetable .time-body .amawari-02 .amawari-box1 .time-sub .ama1-box .ama1-sub {
+  font-weight: bold;
+  color: #666BE0;
+}
+
+.timetable .time-body .amawari-03 .amawari-box1 .time-sub .ama1-box .ama1-sub {
+  font-weight: bold;
+  color: #EEB22D;
+}
+
+.timetable .time-body .katsuren-01 .amawari-box1 .time-sub .ama1-box .ama1-sub {
+  font-weight: bold;
+  color: #E654CF;
+}
+
+/* ---------- 参加ルール ---------- */
+#rule .top {
+  margin-bottom: 200px;
+}
+
+#rule main section {
+  text-align: left;
+}
+
+#rule main section h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#rule main section h5 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+#rule main section h5::before {
+  content: "　※";
+}
+
+#rule main section h5::after {
+  content: "※";
+}
+
+#rule main section ul {
+  margin-bottom: 40px;
+  /* width: 1080px; */
+}
+
+#rule main section ul:last-child {
+  margin-bottom: 0px;
+}
+
+#rule main section ul li {
+  font-size: 16px;
+  line-height: 30px;
+  list-style-type: none;
+}
+
+#rule main section ul li::before {
+  content: "・";
+}
+
+#rule main .tyuui {
+  margin-bottom: 40px;
+}
+
+#rule main section p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#rule main section p::before {
+  content: "※";
+}
+
+
+/* --------- アクセス ---------- */
+#access main section img {
+  margin-bottom: 40px;
+}
+
+main .acs-cath {
+  font-size: 14px;
+  margin-bottom: 150px;
+}
+
+main .acs-cath p {
+  margin-bottom: 40px;
+}
+
+main .acs-box {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  /* width: 900px; */
+}
+
+main .acs-box span {
+  width: 200px;
+  background-color: #f39800;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 90px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+main .acs-box:last-child span {
+  margin-bottom: 0px;
+}
+
+main .acs-box p {
+  margin-top: 20px;
+}
+
+#access main .bus p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+
+
+/* ---------- お問合せ ---------- */
+#contact section {
+  /* width: 1220px; */
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border: 10px solid #0688c4;
+  border-radius: 90px;
+  box-shadow: 0 4px 64px 0 #ddd;
+  padding: 60px;
+  margin-bottom: 150px;
+}
+
+#contact section p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#contact section p:nth-child(5) {
+  margin-bottom: 30px;
+}
+
+#contact section p span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#contact section label::after {
+  content: "＊";
+  color: red;
+  font-size: 16px;
+}
+
+#contact section p:nth-child(5) label::after {
+  content: none;
+}
+
+#contact section input {
+  margin-top: 20px;
+}
+
+#contact section p:nth-child(4) input {
+  margin-bottom: 40px;
+}
+
+#contact section input[type="text"],
+#contact section input[type="tel"],
+#contact section input[type="email"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #aaa;
+}
+
+#contact section input[type="radio"] {
+  accent-color: #0688c4;
+  transform: scale(2);
+  line-height: inherit;
+  font-size: inherit;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#contact section textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #aaa;
+}
+
+#contact section input[type="submit"] {
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+}
+
+/* ---------- 1025px以上 ---------- */
+@media screen and (min-width: 1025px) {
+
+  .top .pc {
+    display: block;
+  }
+
+  .top .pcres {
+    display: none;
+  }
+
+  .pcres1 {
+    display: none;
+  }
+
+  .pcres2 {
+    display: none;
+  }
+
+  .top .sp {
+    display: none;
+  }
+
+  .sp {
+    display: none;
+  }
+  .top img {
+    width: 100%;
+  }
+
+  .copy {
+    width: 100%;
+  }
+
+  main .idx-about .idx-howto {
+    width: auto;
+  }
+
+  main {
+    width: 1200px;
+    margin: 0 auto 0;
+  }
+  .sp_br {
+    display: none;
+  }
+  .openbtn,
+  #g-nav {
+    display: none;
+  }
+}
+
+/* ---------- 1025px以下 ---------- */
+@media screen and (max-width: 1025px) {
+
+  .top .pc {
+    display: none;
+  }
+
+  .top .pcres {
+    display: block;
+  }
+
+  .pcres1 {
+    display: none;
+  }
+
+  .pcres2 {
+    display: none;
+  }
+
+  .top .sp {
+    display: none;
+  }
+
+  .top img {
+    width: auto;
+  }
+
+  .top h1 img {
+    width: 1023px;
+  }
+
+  .top h1 {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .copy {
+    max-width: 800px;
+  }
+
+  main {
+    /* margin-top: 100px; */
+    padding: 0 10.93%;
+  }
+
+  main .kyoutu h3 {
+    position: absolute;
+    top: -37px;
+    left: 14%;
+  }
+
+  main .kyoutu2 h3 {
+    font-size: 28px;
+  }
+
+  main .idx-about .idx-howto {
+    display: block;
+  }
+
+  main .idx-about .idx-howto .howto-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  main .idx-about .idx-howto .howto-box .howto {
+    font-size: 20px;
+  }
+
+  main .pln-katuren .katuren-box h4,
+  main .pln-amawari .amawari-box h4 {
+    font-size: 28px;
+  }
+
+  .pln-amawari .amawari-box .amawari-subbbox {
+    display: block;
+    width: 100%;
+  }
+
+  .pln-amawari .amawari-box .amawari-subbbox img {
+    margin-bottom: 20px;
+  }
+
+  .pln-amawari .amawari-box .time {
+    flex-direction: column;
+  }
+
+  .pln-amawari .amawari-box .speace {
+    flex-direction: column;
+  }
+
+  .pln-katuren .katuren-box .katuren-subbbox {
+    display: block;
+    width: 100%;
+  }
+
+  .pln-katuren .katuren-box .katuren-subbbox img {
+    margin-bottom: 20px;
+  }
+
+  .pln-katuren .katuren-box .time {
+    flex-direction: column;
+  }
+
+  .pln-katuren .katuren-box .speace {
+    flex-direction: column;
+  }
+
+  main .howto-box .hwt-subbox1,
+  .hwt-subbox2 {
+    gap: 20px;
+  }
+
+  main .howto-box .hwt-subbox1 a,
+  .hwt-subbox2 a {
+    width: 253px;
+  }
+
+  main .cospley-box,
+  .camera-box,
+  .custmer-box {
+    flex-direction: column;
+  }
+
+  main .cospley-subbbox,
+  .camera-subbbox,
+  .custmer-subbbox {
+    margin-top: 20px;
+  }
+
+  main .cospley-box img,
+  .camera-box img,
+  .custmer-box img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  main .guest-box {
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  main .guest-box .cospleyer {
+    margin-bottom: 50px;
+  }
+
+  .screen {
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+  }
+
+  .screen .a_screen .schedule {
+    position: sticky;
+    top: 0;
+  }
+
+  .acs-cath iframe {
+    width: 100%;
+  }
+
+  #access .kyoutu2 img {
+    width: 100%;
+  }
+  .sp_br {
+    display: none;
+  }
+  .openbtn,
+  #g-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .top .pc {
+    display: none;
+  }
+
+  .top .pcres {
+    display: block;
+  }
+
+  .top .sp {
+    display: none;
+  }
+
+  .top img {
+    width: 100%;
+  }
+
+  .pc1 {
+    display: none;
+  }
+
+  .pcres1 {
+    display: block;
+  }
+
+  .pc2 {
+    display: none;
+  }
+
+  .pcres2 {
+    display: block;
+  }
+
+  main {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .top h1 img {
+    width: 960px;
+  }
+
+  .top h1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .sp_br {
+    display: none;
+  }
+  .openbtn,
+  #g-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .openbtn,
+  #g-nav {
+    display: block;
+  }
+  .top {
+    width: 100%;
+    position: relative;
+    /* top: 91px; */
+    padding: 0 0 0 0;
+  }
+
+  header {
+    display: none;
+  }
+
+
+  .sp img {
+    width: 100%;
+  }
+  .top .pc {
+    display: none;
+  }
+
+  .top .pcres {
+    display: none;
+  }
+
+  .top .sp {
+    display: block;
+  }
+
+  .top img {
+    width: 100%;
+  }
+
+  .copy {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .pc1 {
+    display: none;
+  }
+
+  .pcres1 {
+    display: block;
+  }
+
+  .pc2 {
+    display: none;
+  }
+
+  .pcres2 {
+    display: block;
+  }
+
+  main {
+    width: 100%;
+    padding: 0 6%;
+  }
+
+  .top h1 img {
+    max-width: 430px;
+  }
+
+  .top h1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  main .kyoutu h3 img {
+    width: 80%;
+  }
+
+  main .kyoutu h3 {
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+  main .kyoutu2 h3 {
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 32px;
+    width: 92%;
+    padding: 1% 0;
+    font-size: 5vw;
+  }
+  #plan main .kyoutu2 h3 {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 32px;
+    width: 92%;
+    padding: 1% 0;
+  }
+  main .kyoutu,
+  main .kyoutu2,
+  #contact section {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    border: 7px solid #0688c4;
+    border-radius: 20px;
+    box-shadow: 0 4px 64px 0 #ddd;
+    margin-bottom: 150px;
+    padding: 80px 20px 20px 20px;
+  }
+
+  main .idx-about p {
+    font-size: 3.6458333333vw;
+  }
+
+  main .idx-about .time,
+  .idx-about .speace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 3.125vw
+  }
+
+  main .idx-about .speace .subbox2 {
+    text-align: center;
+    font-size: 3.125vw
+  }
+
+  main .idx-about .idx-howto .howto-box .howto {
+    font-size: 3.3854166667vw;
+  }
+  main .idx-about .idx-howto .howto-box .howto a {
+    line-height: 53px;
+  }
+
+  main .idx-topics h2 {
+    font-size: 6.25vw;
+  }
+
+  main .idx-topics .topics-box time {
+    font-size: 3.125vw;
+  }
+
+  main .idx-topics .topics-box {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 7.8125vw;
+    padding: 21px 35px 21px 35px;
+  }
+
+  main .idx-topics .topics-box p {
+    font-size: 2.8645833333vw;
+  }
+
+  main .idx-live {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .idx-live iframe {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  main .idx-live iframe:last-child {
+    margin-right: auto;
+  }
+
+  main .idx-x p,
+  main .idx-enter p {
+    font-size: 2.8645833333vw;
+  }
+  main .idx-x .x a {
+    width: 100%;
+  }
+
+  main .idx-memory {
+    margin-bottom: 100px;
+  }
+  #page-top {
+    margin-bottom: 20px;
+  }
+
+  .kabo {
+    width: 60%;
+  }
+
+  .button {
+    width: 15%;
+  }
+  footer .fo-box {
+    padding-top: 40px;
+}
+footer .fo-box a {
+  font-size: 2.8645833333vw;
+  width: 55%;
+  line-height: 36px;
+}
+  footer small {
+    font-size: 12px;
+  }
+
+  /*========= ぼかしのためのCSS ===============*/
+
+  .mainblur {
+    filter: blur(8px);
+  }
+
+
+  /*========= ナビゲーションのためのCSS ===============*/
+
+  #g-nav {
+    /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    /*はじめは透過0*/
+    /*ナビの位置と形状*/
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: rgba(255, 255, 255, 0.3);
+    /*背景を少し透過させる*/
+    /*動き*/
+    transition: all 0.3s;
+  }
+
+  /*アクティブクラスがついたら透過なしにして最前面へ*/
+  #g-nav.panelactive {
+    opacity: 1;
+    z-index: 999;
+  }
+
+  /*ナビゲーションの縦スクロール*/
+  #g-nav.panelactive #g-nav-list {
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    /*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /*ナビゲーション*/
+  #g-nav ul {
+    display: none;
+    /*はじめは非表示*/
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #g-nav.panelactive ul {
+    display: block;
+  }
+
+  /*リストのレイアウト設定*/
+
+  #g-nav li {
+    list-style: none;
+    text-align: center;
+  }
+
+  #g-nav li a {
+    color: #40220F;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+
+  /*========= ボタンのためのCSS ===============*/
+  .openbtn {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: -4px;
+    right: 13px;
+    cursor: pointer;
+    width: 79px;
+    height: 64px;
+    border-radius: 0 0 21px 21px;
+    background-color: #0688c4;
+  }
+
+  .openbtn p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+
+  /*×に変化*/
+  .openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 31px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 21%;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top: 15px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top: 23px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top: 31px;
+  }
+
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 31px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 21%;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 31px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 21%;
+  }
+  .top2 {
+    margin-top: 110px;
+  }
+  main .pln-map img {
+    width: 100%;
+  }
+  .sp_br {
+    display: block;
+  }
+
+  main .pln-map .map-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 85px;
+    gap: 20px;
+  }
+
+  .pln-amawari .amawari-box .amawari-subbbox img {
+    width: 100%;
+  }
+  main .pln-map .map-box a,
+  main .pln-map .map-box a {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  main .cospley-box .cospley-subbbox h4, .camera-box .camera-subbbox h4, .custmer-box .custmer-subbbox h4 {
+    font-size: 4.20vw;
+  }
+
+  main .pln-amawari .amawari-box,
+  .pln-katuren .katuren-box {
+    padding: 17px;
+  }
+  main .time .subbox, .speace .subbox {
+    font-size: 4vw;
+  }
+  .amawari-subbbox p,
+  .katuren-subbbox p {
+    width: 100%;
+    margin-left: 0px;
+    font-size: 2.8645833333vw;
+  }
+
+  main .pln-katuren .katuren-box h4,
+  main .pln-amawari .amawari-box h4 {
+    margin: 20px 0;
+    font-size: 4.20vw;
+  }
+
+  main .time,
+  .speace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 4vw;
+  }
+  .pln-katuren .katuren-box .katuren-subbbox img {
+    width: 100%;
+  }
+  main .howto-box p,
+  main .subcatch {
+  font-size: 4vw;
+  line-height: 7vw;
+  }
+  main .howto-box .hwt-subbox1, .hwt-subbox2 {
+    display: flex;
+    flex-direction: column;
+  }
+  main .howto-box .hwt-subbox1 a, .hwt-subbox2 a {
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 90px;
+}
+  main .cospley-subbbox, .camera-subbbox, .custmer-subbbox {
+    margin-left: 0;
+  }
+  main .cospley-subbbox p, .camera-subbbox p, .custmer-subbbox p {
+    width: 100%;
+    font-size: 2.8645833333vw;
+  }
+  main .subcatch {
+    margin-bottom: 70px;
+  }
+  main figcaption,
+  main button i {
+    font-size: 2.8645833333vw;
+  }
+  main button {
+    width: 30px;
+    height: 30px;
+  }
+  #guest figure img {
+    width: 60%;
+  }
+  .button1 {
+    font-size: 2.8645833333vw;
+    width: 100%;
+    height: 48px;
+}
+#a_btn.active::before {
+  font-size: 29px;
+  position: absolute;
+  top: -28px;
+  left: 45%;
+}
+#b_btn.active::before {
+  font-size: 29px;
+  position: absolute;
+  top: -28px;
+  left: 45%;
+}
+#rule .top {
+  margin-bottom: 130px;
+}
+#rule main section h4 {
+  font-size: 5vw;
+}
+#rule main section ul li,
+#rule main section p,
+#rule main section h5 {
+  font-size: 2.8645833333vw;
+}
+.acs-cath iframe {
+  width: 100%;
+  height: 400px;
+}
+main .acs-box {
+  font-size: 2.8645833333vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .acs-box p {
+  margin-top: 10px;
+}
+#access main .bus p {
+  font-size: 2.8645833333vw;
+}
+main .acs-box span {
+  width: 182px;
+  background-color: #f39800;
+  color: #fff;
+  padding: 12px 0;
+  border-radius: 90px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+#contact section p {
+  font-size: 2.8645833333vw;
+}
+#contact section input[type="text"], #contact section input[type="tel"], #contact section input[type="email"] {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #aaa;
+}
+#contact section input[type="submit"] {
+  font-size: 2.8645833333vw;
+  height: 40px;
+  width: 115px;
+}
+
+}
