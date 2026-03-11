@@ -1,0 +1,797 @@
+@charset "utf-8";
+
+body {
+  font-family: 'メイリオ', Meiryo, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+  font-size: 15px;
+  background-color: #fff;
+  color: #333;
+}
+
+.inner {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* --- header --- */
+header {
+  margin: 20px 0;
+}
+header .box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header .box2 {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+}
+header .box3 nav {
+  margin: 0 0 25px 100px;
+}
+header .box3 nav ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+header .box3 nav ul li {
+  width: 100%;
+  border-right: 1px dotted #333;
+}
+header .box3 nav ul li img {
+  margin-right: 10px;
+}
+header .box3 nav ul li a{
+  display: block;
+  text-decoration-line: none;
+  text-align: center;
+  color: #333;
+}
+header .box3 nav ul li a:hover {
+  color: #2c4f28;
+}
+header .box3 nav ul li:last-child {
+  border-right: none;
+}
+header .box4 nav ul{
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+header .box4 nav ul li {
+  width: 100%;
+}
+header .box4 nav ul li a{
+  text-decoration-line: none;
+  color: #333;
+  text-align: center;
+  display: block;
+}
+
+
+
+
+/* --- contents --- */
+.contents {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+main {
+  width: 700px;
+}
+aside {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+aside a {
+  display: block;
+  margin-bottom: 20px;
+}
+aside a:last-child {
+  margin-bottom: 0px;
+}
+
+
+
+
+/* --- footer --- */
+footer {
+  text-align: center;
+}
+footer h1 img {
+  height: 50px;
+}
+footer address {
+  font-style: normal;
+  font-size: 10px;
+  line-height: 16px;
+  margin: 20px 0;
+}
+footer address a {
+  color: #333;
+  text-decoration: none;
+}
+footer p {
+  color: #fff;
+  font-size: 10px;
+  background-color: #2c4f28;
+  line-height: 30px;
+}
+footer p small {
+  display: block;
+}
+
+
+
+
+/* ---------- 共通 ---------- */
+.top {
+  position: relative;
+  margin-bottom: 20px;
+}
+.top h2 {
+  font-size: 40px;
+  width: 445px;
+  text-align: center;
+  font-weight: lighter;
+  padding: 40px 60px;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+.pan {
+  width: 1000px;
+  margin: 0 auto 50px auto;
+}
+.pan a {
+  color: #006400;
+}
+main h3 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+main h3 .tittle {
+  display: block;
+  color: #2c4f28;
+  font-size: 26px;
+  border-left: 6px solid #2c4f28;
+  padding-left: 14px;
+  margin: 10px 0;
+}
+main button {
+  background-color: #2c4f28;
+  border: none;
+  width: 100px;
+  height: 35px;
+  color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.con {
+  line-height: 240px;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* ---ナビ下線 --- */
+.gnavi li a{
+  padding-bottom: 10px;
+}
+/*==================================================
+　5-3-1 中心から外に線が伸びる（下部）
+===================================*/
+
+.gnavi li a{
+  /*線の基点とするためrelativeを指定*/
+position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover{
+color:#333;
+}
+
+.gnavi li a::after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 3px;
+  background:#2c4f28;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+  transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+
+
+
+/* ---------- ホーム ---------- */
+.topimg img {
+  margin-bottom: 50px;
+}
+#home main h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: lighter;
+}
+#home main ul {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+#home main ul li {
+  border-bottom: 0.5px solid #ccc;
+  list-style-type: none;
+  padding: 24.5px 0 24.5px 20px;
+}
+#home main ul li a:link {
+  color: #006400;
+}
+#home main ul li:nth-child(1) {
+  border-top: 0.5px solid #ccc;
+}
+#home main .bottun {
+  display: block;
+  width: 200px;
+  font-size: 15px;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*表示するテキストが切り替わる*/
+.bottun{
+  /*テキストの基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  border: 1px solid #2c4f28;
+  border-radius:25px;
+  min-width:210px;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #2c4f28;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: all .2s;
+}
+
+/*hoverした際の変化*/
+.bottun:hover{
+background:#fff;
+color:#2c4f28;
+}
+
+.bottun span{
+  /*絶対配置でテキストの位置を決める*/
+position: absolute;
+left: 50%;
+top:50%;
+  transform:translate(-50%,-50%);
+  /*アニメーションの指定*/
+  transition: all .5s;
+/*ブロック要素にしてテキスト折り返しなし*/  
+display: block;
+white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.bottun span:nth-child(2){
+opacity:0;/*透過0に*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.bottun:hover span:nth-child(1){
+opacity:0;/*透過0に*/
+}
+
+.bottun:hover span:nth-child(2){
+opacity:1;/*不透明に*/
+}
+
+
+
+.bottun{
+  /*矢印の基点とするためrelativeを指定*/
+position: relative;
+  /*アニメーションの指定*/
+  transition: ease .2s;
+}
+
+/* 矢印が右に移動 */
+
+.btnarrow1::after{
+  content: '';
+  /*絶対配置で矢印の位置を決める*/
+position: absolute;
+  top:42%;
+  right: 5px;
+  /*矢印の形状*/
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #2c4f28;
+  border-right: 2px solid #2c4f28;
+  transform: rotate(45deg);
+  /*アニメーションの指定*/
+  transition: all .3s;
+}
+
+/*hoverした際の移動*/
+.btnarrow1:hover::after{
+  right: 20px;
+}
+
+
+/* ---------- 学校生活 ---------- */
+#gakkou .top h2 {
+  background-image: url(../images/gakkou_icon.jpg);
+}
+#gakkou section {
+  margin-bottom: 20px;
+}
+#gakkou section:last-child {
+  margin-bottom: 0px;
+}
+#gakkou section h4 {
+  font-size: 15px;
+  color: #2c4f28;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+#gakkou section .sec1 {
+  display: flex;
+  justify-content: space-between;
+}
+#gakkou section p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 10px;
+}
+
+
+
+
+/* ---------- 入学案内 ---------- */
+#nyugaku .top h2 {
+  background-image: url(../images/nyugaku_icon.jpg);
+}
+#nyugaku main h4 {
+  font-size: 15px;
+  background-color: #d7ebd7;
+  padding: 10px 0 10px 10px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+#nyugaku main table {
+  font-size: 15px;
+  width: 700px;
+}
+#nyugaku main .no {
+  margin-bottom: 20px;
+}
+#nyugaku main .ok {
+  margin-bottom: 50px;
+}
+#nyugaku main table tr:last-child {
+  margin-bottom: 0px;
+}
+#nyugaku main table caption {
+  text-align: left;
+  margin-bottom: 10px;
+}
+#nyugaku main table th {
+  font-weight: normal;
+  padding: 20px 0 20px 10px;
+  border-top: 1px solid #2c4f28;
+  border-right: 1px solid #2c4f28;
+  border-bottom: 1px solid #2c4f28;
+  width: 250px;
+  color: #2c4f28;
+}
+#nyugaku main table td {
+  padding: 20px 0 20px 10px;
+  border-top: 1px solid #2c4f28;
+  border-bottom: 1px solid #2c4f28;
+  color: #2c4f28;
+}
+#nyugaku main ul li {
+  list-style-type: none;
+  font-size: 15px;
+}
+#nyugaku main ul li a:link {
+  display: block;
+  color: #006400;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* ---------- 学校案内 ---------- */
+#annnai .top h2 {
+  background-image: url(../images/annai_icon.jpg);
+}
+#annnai main section {
+  display: flex;
+  width: 340px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  border-bottom: 1px dotted #ccc;
+}
+#annnai main section:last-child {
+  margin-right: 0px;
+}
+#annnai main section img {
+  margin-right: 10px;
+}
+#annnai main section h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#annnai main section p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#annnai main section a:link{
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+#annnai main .gon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#annnai main .miro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+
+/* ---------- 各種申請等 ---------- */
+#sinsei .top h2 {
+  background-image: url(../images/sinsei_icon.jpg);
+}
+#sinsei main h4 {
+  font-size: 15px;
+  background-color: #d7ebd7;
+  padding: 10px 0 10px 10px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+#sinsei main ul li {
+  list-style-type: none;
+  font-size: 15px;
+}
+#sinsei main ul li a:link {
+  display: block;
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+
+
+/* ---------- お問合せ --------- */
+#contact .con {
+  background-image: url(../images/contact_icon.jpg);
+}
+#contact main p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+#contact main table {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+#contact main table th {
+font-weight: normal;
+padding: 10px 0;
+width: 250px;
+vertical-align: middle;
+}
+#contact main table .hi {
+  height: 34px;
+  vertical-align: top;
+}
+#contact main table th span {
+  background-color: red;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  width: 25px;
+  padding: 2px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+#contact main table td {
+  width: 450px;
+  vertical-align: middle;
+}
+#contact main table td input {
+  width: 400px;
+  height: 25px;
+  border: 1px solid #ccc;
+}
+#contact main table td textarea {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+
+
+
+
+/* ---------- オープンスクール情報 ---------- */
+#annai_open .top h2 {
+  background-image: url(../images/annai_icon.jpg);
+}
+#annai_open h3 {
+  color: #2c4f28;
+  font-size: 26px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+#annai_open p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#annai_open p a {
+  text-decoration: none;
+  color: #333;
+}
+#annai_open table {
+  font-size: 15px;
+  width: 700px;
+}
+#annai_open table th {
+  font-weight: normal;
+  padding: 20px 0 20px 10px;
+  border-top: 1px solid #2c4f28;
+  border-right: 1px solid #2c4f28;
+  border-bottom: 1px solid #2c4f28;
+  width: 250px;
+  color: #2c4f28;
+}
+#annai_open table td {
+  padding: 20px 0 20px 10px;
+  border-top: 1px solid #2c4f28;
+  border-bottom: 1px solid #2c4f28;
+  color: #2c4f28;
+}
+
+
+
+/* ---------- スクールポリシー ---------- */
+#annai_kyouiku .top h2 {
+  background-image: url(../images/annai_icon.jpg);
+}
+#annai_kyouiku main h3 {
+  color: #2c4f28;
+  font-size: 26px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+#annai_kyouiku main img {
+  margin-bottom: 20px;
+}
+#annai_kyouiku section h4 {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+#annai_kyouiku section p {
+  font-size: 14px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+
+
+
+/* ---------- 校長挨拶 ---------- */
+#annai_kyouiku main p {
+  font-size: 14px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+
+
+
+/* ---------- 申請１ ---------- */
+#sinsei_1 .top h2 {
+  background-image: url(../images/sinsei_icon.jpg);
+}
+#sinsei_1 main h3 {
+  color: #2c4f28;
+  font-size: 26px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+#sinsei_1 main h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#sinsei_1 main p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+#sinsei_1 main section:last-child p{
+  margin-bottom: 0px;
+}
+#sinsei_1 main p a:link {
+  color: #006400;
+}
+#sinsei_1 main section p span {
+  color: red;
+  font-weight: bold;
+}
+
+/* ---------- 申請２ ---------- */
+#sinsei_2 .top h2 {
+  background-image: url(../images/sinsei_icon.jpg);
+}
+#sinsei_2 main h3 {
+  color: #2c4f28;
+  font-size: 26px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+#sinsei_2 main h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#sinsei_2 main p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#sinsei_2 main section:last-child p{
+  margin-bottom: 0px;
+}
+#sinsei_2 main section p span {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+/* ---------- アクセス ---------- */
+#access .top h2 {
+  background-image: url(../images/access_icon.jpg);
+}
+#access main table {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+#access main table th {
+  background-color: #f5f5f5;
+  padding: 10px 0 10px 10px;
+  width: 200px;
+  font-weight: normal;
+  border: 1px solid #ccc;
+}
+#access main table td {
+  padding: 10px 0 10px 10px;
+  width: 500px;
+  border: 1px solid #ccc;
+}
+#access main h4 {
+  color: #2c4f28;
+  margin-bottom: 10px;
+}
+#access main p {
+  margin-bottom: 20px;
+}
+
+
+
+/* ---------- 保護者ページ ---------- */
+#hogosya .con {
+  background-image: url(../images/hogosya_icon.jpg);
+}
+#hogosya main p {
+  margin-bottom: 20px;
+}
+#hogosya main table {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#hogosya main table th {
+  font-weight: normal;
+  width: 250px;
+  padding: 10px 0 10px 10px;
+}
+#hogosya main table td {
+  width: 450px;
+}
+#hogosya main table td input {
+  border: 1px solid #ccc;
+  width: 350px;
+  height: 25px;
+}
+
+
+
+/* --------- PTA活動 ---------- */
+#pta .con {
+  background-image: url(../images/pta_icon.jpg);
+}
+#pta main section {
+  display: flex;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px dotted #ccc;
+}
+#pta main section:nth-child(4) {
+  margin-bottom: 50px;
+}
+#pta main section img {
+  margin-right: 10px;
+}
+#pta main section h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#pta main section p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+#pta main .bb {
+  text-align: center;
+  background-color: #d7ebd7;
+  padding: 10px;
+}
+#pta main .bb h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#pta main .bb p {
+  font-size: 14px;
+  line-height: 22px;
+}
